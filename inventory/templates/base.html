@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="">  
+        <h1>Введите данные компьютера</h1>
+        <p>Модель компьютера</p>
+        {{ computer_forms.computer_name }}
+        <p>Инвентарьный номер</p>
+        {{ computer_forms.inventary_number }}
+        <p>Серийный номер</p>
+        {{ computer_forms.serial_number }}\
+        <button type="submit">Сохранить</button>
+    </form>
+
+    <h1>Введите данные пользователя</h1>
+    <p>ФИО</p>
+    {{ person_forms.name }}
+    <p>Компьютер</p>
+    {{ person_forms.computer }}
+</body>
+</html>
